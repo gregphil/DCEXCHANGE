@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-duration: 1s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+marquee {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.body {
+    width: min(600px,100%);
+    margin: 0 auto;
+}
+
+.sec1 {
+    padding: 0;
+}
+
+.sec1 img {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+}
+
+.sec2 {
+    background-color: white;
+}
+
+.services {
+    padding: 0 15px;
+}
+
+.services h1 {
+    margin: 10% 0;
+}
+
+.servicebox div img {
+    width: 100%;
+    height: fit-content;
+    margin: 35px 0;
+    box-shadow: 0 0 10px #b1b1b1;
+}
+
+img {
+    border-radius: 7px;
+}
+
+#svgimg {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 6%;
+}
+
+#svgimg svg {
+    background-color: #25d366;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    box-shadow: 0 0 5px #333;
+    border-radius: 50%;
+    animation: whatsapp 1s linear 4s infinite forwards;
+}
+
+.column_span {
+    grid-column: span 2;
+}
+
+.services div:last-child {
+    height: min(200px,80%);
+}
+
+.services div:last-child img {
+    margin: 15px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15% 0;
+    background-color: #333;
+}
+
+footer a {
+    padding: 15px 0;
+    display: inline-block;
+    background-color: #25d366;
+    width: min(90%, 400px);
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@keyframes whatsapp {
+    from {
+        width: 50px;
+        height: 50px;
+    } to {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .servicebox div {
+        height: 250px;
+        margin: 100px 0;
+    }
+
+    .servicebox div img {
+        height: 250px;
+    }
+    
+    .sec1 img {
+        height: 340px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {  
+    .servicebox div {
+        height: 180px;
+        margin: 70px 0;
+    }
+
+    .servicebox div img {
+        height: 180px;
+    }
+
+    .sec1 img {
+        height: 320px;
+    }
+    
+}
+
